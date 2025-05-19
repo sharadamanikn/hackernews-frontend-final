@@ -13,7 +13,7 @@ const NavigationBar = () => {
     { label: "submit", href: "/submit" },
   ];
   return (
-    <nav className="fixed top-1 left-0 right-0 z-50 bg-blue-950 hover:bg-pink-500 text-white text-1xl font-sans max-w-screen-lg mx-auto  w-full rounded-md">
+    <nav className="fixed top-1 left-0 right-0 z-50 bg-blue-950 hover:bg-pink-500 text-white border border-white-100 text-1xl font-sans max-w-screen-lg mx-auto  w-full rounded-md">
       <div className="w-full flex items-center justify-between px-3 py-1">
         <div className="flex items-center flex-wrap gap-2">
           <Link href="/" className="font-bold text-white">
