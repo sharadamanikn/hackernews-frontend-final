@@ -228,7 +228,7 @@ setPosts(visiblePosts);
     <button
       onClick={() => setPage((prev) => Math.max(prev - 1, 1))}
       disabled={page === 1}
-      className="px-3 py-1 border rounded disabled:opacity-50"
+      className="px-3 py-1 border rounded disabled:opacity-50 text-white"
     >
       Previous
     </button>
@@ -236,11 +236,11 @@ setPosts(visiblePosts);
     {[...Array(totalPages)].map((_, i) => {
       const pageNum = i + 1;
       return (
-        <button
+        <button 
           key={pageNum}
           onClick={() => setPage(pageNum)}
           className={`px-3 py-1 rounded border ${
-            page === pageNum ? "bg-gray-200 font-bold" : ""
+            page === pageNum ? "bg-pink-500 text-white font-bold" : ""
           }`}
         >
           {pageNum}
@@ -251,7 +251,7 @@ setPosts(visiblePosts);
     <button
       onClick={() => setPage((prev) => Math.min(prev + 1, totalPages))}
       disabled={page === totalPages}
-      className="px-3 py-1 border rounded disabled:opacity-50"
+      className="px-3 py-1 text-white border rounded disabled:opacity-50"
     >
       Next
     </button>

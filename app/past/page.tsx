@@ -65,7 +65,7 @@ const PastPostsPage = () => {
 
   return (
     <div className="bg-[#f6f6ef] min-h-screen pt-20 px-4 text-[13px] text-black max-w-2xl mx-auto">
-      <h1 className="text-orange-600 text-[18px] font-bold mb-6 text-center">Past Posts</h1>
+      <h1 className="text-pink-600 text-[18px] font-bold mb-6 text-center">Past Posts</h1>
   
       <div className="flex gap-3 justify-center mb-8 text-sm">
         <button
@@ -120,7 +120,7 @@ const PastPostsPage = () => {
             disabled={loading}
             className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 disabled:opacity-50"
           >
-            {loading ? "Loading..." : "More"}
+            {loading ? "Loading..." : "Load More"}
           </button>
         </div>
       )}

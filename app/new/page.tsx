@@ -54,7 +54,7 @@ export default function NewPostsPage() {
 
   return (
     <div className="min-h-screen p-4 max-w-2xl mx-auto bg-[#f6f6ef] mt-15">
-      <h1 className="text-[18px] font-bold mb-4 text-orange-600 text-center">New Posts</h1>
+      <h1 className="text-[18px] font-bold mb-4 text-pink-600 text-center">New Posts</h1>
 
       <div className="space-y-4">
         {posts.map((post, index) => (

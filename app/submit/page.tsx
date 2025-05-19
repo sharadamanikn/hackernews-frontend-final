@@ -41,10 +41,10 @@ export default function SubmitPage() {
 
   return (
     <div className="max-w-xl mx-auto mt-15 text-sm">
-      <div className="bg-orange-500 p-2 text-black font-bold">Submit</div>
+      <div className="bg-pink-400 p-2 text-black font-bold">Submit</div>
       <form onSubmit={handleSubmit} className="bg-[#f6f6ef] p-4">
         <div className="mb-3">
-          <label className="block mb-1">title</label>
+          <label className="block mb-1">Post Title</label>
           <input
             type="text"
             value={title}
@@ -54,7 +54,7 @@ export default function SubmitPage() {
           />
         </div>
 
-        <div className="mb-3">
+        {/* <div className="mb-3">
           <label className="block mb-1">url</label>
           <input
             type="text"
@@ -62,10 +62,10 @@ export default function SubmitPage() {
             placeholder="(optional - currently disabled)"
             className="w-full border border-gray-300 rounded px-2 py-1 bg-gray-100"
           />
-        </div>
+        </div> */}
 
         <div className="mb-4">
-          <label className="block mb-1">text</label>
+          <label className="block mb-1">Description</label>
           <textarea
             value={content}
             onChange={(e) => setContent(e.target.value)}
@@ -78,13 +78,13 @@ export default function SubmitPage() {
           className="bg-gray-300 px-4 py-1 rounded hover:bg-gray-400"
           disabled={isSubmitting}
         >
-          {isSubmitting ? "Submitting..." : "submit"}
+          {isSubmitting ? "Submitting..." : "Submit"}
         </button>
 
-        <p className="mt-4 text-xs text-gray-600">
+        {/* <p className="mt-4 text-xs text-gray-600">
           Leave url blank to submit a question for discussion. If there is no
           url, text will appear at the top of the thread.
-        </p>
+        </p> */}
       </form>
     </div>
   );
